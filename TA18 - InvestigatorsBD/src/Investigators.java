@@ -18,7 +18,9 @@ public class Investigators {
 		try { 
 			//Class.forName("com.mysql.jdbc.Driver"); 
 			//conn = DriverManager.getConnection(url, login, password); 
-			String sURL = url; conn = DriverManager.getConnection(sURL,login,password); 
+			String sURL = url; 
+			conn = DriverManager.getConnection(sURL,login,password); 
+			
 			if (conn != null) { 
 				System.out.println("-Abierta base de datos " + url + " - Ok"); 
 			// Crear tabla contacto 
